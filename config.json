@@ -1,0 +1,8 @@
+{
+  "database" : {
+    "ip" : "172.16.51.117",
+    "user" : "oracle",
+    "password" : "oracle",
+    "sid" : "orcl"
+  }
+}

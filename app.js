@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var collector = require('./routes/collector');
 
 var app = express();
 
@@ -24,11 +25,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/analysis', collector);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
+  err.type = "Not Found";
+  err.message = "유효하지 않은 요청입니다.";
   next(err);
 });
 
