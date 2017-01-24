@@ -3,7 +3,7 @@ var config = require('../controllers/configController');
 
 var oracleConnector = {};
 
-oracleConnector.getConnect = function(callback){
+oracleConnector.getConnection = function(callback){
     oracledb.getConnection(
         {
             user : config.database.user,

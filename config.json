@@ -4,5 +4,9 @@
     "user" : "oracle",
     "password" : "oracle",
     "sid" : "orcl"
+  },
+  "spark" : {
+    "masterIp1" : "172.16.33.198",
+    "masterIp2" : "172.16.39.120"
   }
 }
